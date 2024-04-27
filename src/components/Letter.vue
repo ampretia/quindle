@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { LetterResult } from '@/words';
+import type { LetterResult } from '@/game';
 import { reactive, ref, computed } from 'vue';
 
 
@@ -31,7 +31,7 @@ const flipped = computed(() => ({
 <template>
   <div>
     <div class="level flip-card" x>
-      <div class="level-item has-text-weight-bold is-size-1 flip-card-inner has-background-primary-light"
+      <div class="level-item has-text-weight-bold is-family-monospace is-size-1 flip-card-inner has-background-link-light"
         :class="[flipped]">
         <span :class="[]" class="flip-card-back has-text-centered vc">{{ letterGuess.letter }}</span>
         <span :class="[classObject, bkgClass]"

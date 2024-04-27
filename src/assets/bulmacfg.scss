@@ -1,1 +1,16 @@
-@import 'bulma/css/bulma.css';
+// $primary: #f7b2ad;
+
+// @import 'bulma/css/bulma.css';
+// Path to Bulma's sass folder
+// Path to Bulma's sass folder
+@use "bulma/sass" with (
+  $primary: #3FA7D6,
+  $link: #655a7c,
+  $info: #F79D84,
+  $danger: #EE6532,
+  $warning: #FAC05E,
+  $success: #59CD90,
+);
+
+// Import the Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
